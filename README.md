@@ -17,7 +17,7 @@ Used data is open source tutorial data from PostgreSQL available [here](https://
 ## Repository overview - folders
 
 ### SQL queries
-Folder contains a selection of the scripts used during the analysis. The remaining scripts can be found in [this](/SQL Results/Presenting SQL results.xlsx) Excel file.
+Folder contains a selection of the scripts used during the analysis. The remaining scripts can be found in [this](https://github.com/lomanita/Rockbuster-Stealth-SQL/blob/03813497b09edbc264a025cbad4ad33fe356e7e1/SQL%20results/Presenting%20SQL%20results.xlsx) Excel file.
 ### SQL results
 Folder contains
   - Data dictionary
