@@ -15,5 +15,10 @@ Used data is open source tutorial data from PostgreSQL available [here](https://
 
 ## Repository overview - folders
 
-### SQL scripts
+### SQL queries
 Folder contains a selection of the scripts used during the analysis. The remaining scripts can be found in this Excel file.
+### SQL results
+Folder contains
+  - Data dictionary
+  - Power Point presentation of the findings
+  - Excel file with all scripts used in the analysis, their data outputs, and the results of the analysis
