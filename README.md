@@ -17,7 +17,7 @@ Used data is open source tutorial data from PostgreSQL available [here](https://
 ## Repository overview - folders
 
 ### SQL queries
-Folder contains a selection of the scripts used during the analysis. The remaining scripts can be found in [this](/SQL results/Presenting SQL results.xlsx) Excel file.
+Folder contains a selection of the scripts used during the analysis. The remaining scripts can be found in [this](/SQL Results/Presenting SQL results.xlsx) Excel file.
 ### SQL results
 Folder contains
   - Data dictionary
