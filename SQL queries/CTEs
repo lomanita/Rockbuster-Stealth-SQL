@@ -74,9 +74,3 @@ as (
         having count (movies_and_revenue.rental_id) * movies_and_revenue.rental_rate > sum (movies_and_revenue.revenue)
         order by movies_and_revenue.movie_id asc
         )
-
-select
-    rating,
-    sum (revenue)
-from movies_and_revenue
-group by rating
