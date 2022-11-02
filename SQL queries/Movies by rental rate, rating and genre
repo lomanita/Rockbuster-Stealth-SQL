@@ -1,0 +1,42 @@
+-- movies and revenue full join, CTE
+with movies_and_revenue
+    (
+        movie_id,
+        movie,
+        genre,
+        rating,
+        revenue,
+        rental_id,
+        rental_rate,
+        customer_id,
+        customer
+    )
+as (
+    select
+        film.film_id,
+        film.title,
+        category.name as genre,
+        film.rating,
+        payment.amount as revenue,
+        rental.rental_id,
+        film.rental_rate,
+        customer.customer_id,
+        concat (customer.first_name, ' ', customer.last_name) as customer
+    from payment
+    full join rental on payment.rental_id = rental.rental_id
+    full join inventory on rental.inventory_id = inventory.inventory_id
+    full join film on inventory.film_id = film.film_id
+    full join film_category on film.film_id = film_category.film_id
+    full join category on film_category.category_id = category.category_id
+    full join customer on payment.customer_id = customer.customer_id
+    )
+
+select
+    movie,
+    count (distinct movie),
+    rental_rate,
+    rating,
+    genre
+from movies_and_revenue
+group by movie, rental_rate, rating, genre
+order by movie
